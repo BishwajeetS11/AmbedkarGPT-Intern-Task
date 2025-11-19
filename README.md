@@ -122,6 +122,7 @@ The chatbot will answer using ONLY the speech content.
 
 This is the recommended clean version:
 
+
 langchain==0.1.6
 
 langchain-community==0.0.20
@@ -172,6 +173,7 @@ Using Ollama Mistral 7B, guided by a strict prompt that forces answers ONLY from
 ✔ Why can people never get rid of caste?
 
 All answers will come directly from the speech.
+
 
 
 
