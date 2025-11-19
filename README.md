@@ -9,11 +9,12 @@ No online services.
 
 🚀 Features
 
-Loads and processes speech.txt
+Loads and processes "speech.txt"
 
 Splits text into manageable chunks
 
 Generates embeddings using
+
 sentence-transformers/all-MiniLM-L6-v2
 
 Stores embeddings in ChromaDB (local vector DB)
@@ -25,6 +26,7 @@ Uses Ollama (Mistral 7B) as the offline LLM
 Answers questions ONLY from the speech
 
 CLI interface (python main.py)
+
 
 📂 Project Structure:
 
@@ -43,21 +45,27 @@ rag-app/
 
 The chroma_store/ directory is created automatically when running the program for the first time.
 
+
 🛠️ 1. Installation
+
 Step 1 — Create a fresh Python environment
 
 (Recommended: conda )
 
 Using Conda:
 conda create -n rag python=3.10 -y
+
 conda activate rag
 
 Using venv:
 python -m venv venv
-source venv/bin/activate       # Mac/Linux
-venv\Scripts\activate          # Windows
+
+source venv/bin/activate           # Mac/Linux
+
+venv\Scripts\activate              # Windows
 
 🔧 2. Install Dependencies
+
 
 Run:
 pip install -r requirements.txt
@@ -95,8 +103,11 @@ python main.py
 You should see:
 
 📚 RAG CLI — Chroma + Embeddings + Ollama
+
 📄 Creating new Chroma vectorstore...
+
 ✅ Chroma store created.
+
 ✅ Ready! Ask questions (type 'exit' to quit).
 
 
@@ -143,10 +154,15 @@ Using Ollama Mistral 7B, guided by a strict prompt that forces answers ONLY from
 🧪 Example Questions:
 
 ✔ What does the speaker describe as the “real remedy”?
+
 ✔ Why can’t caste and belief in the shastras coexist?
+
 ✔ Why does social reform fail according to the speaker?
+
 ✔ What is the “real enemy”?
+
 ✔ Why can people never get rid of caste?
 
 All answers will come directly from the speech.
+
 
