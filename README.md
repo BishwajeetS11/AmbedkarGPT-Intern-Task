@@ -26,13 +26,19 @@ Answers questions ONLY from the speech
 
 CLI interface (python main.py)
 
-📂 Project Structure
+📂 Project Structure:
+
 rag-app/
-│── main.py               # Main RAG CLI app
-│── speech.txt            # Provided Ambedkar speech
-│── requirements.txt      # Python dependencies
-│── README.md             # Documentation
-└── chroma_store/         # Auto-generated vector store (keep this folder)
+
+│── main.py                   # Main RAG CLI app
+
+│── speech.txt                # Provided Ambedkar speech
+
+│── requirements.txt          # Python dependencies
+
+│── README.md                 # Documentation
+
+└── chroma_store/             # Auto-generated vector store (keep this folder)
 
 
 The chroma_store/ directory is created automatically when running the program for the first time.
@@ -143,3 +149,4 @@ Using Ollama Mistral 7B, guided by a strict prompt that forces answers ONLY from
 ✔ Why can people never get rid of caste?
 
 All answers will come directly from the speech.
+
