@@ -1,0 +1,81 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+
+# Virtual environment
+venv/
+.env/
+.env.bak/
+*.env
+.env.*
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# Byte-compiled / optimized
+*.bak
+*.swp
+*.swo
+
+# -------------------------
+# RAG / LangChain
+# -------------------------
+
+# ChromaDB directory (never push vector store)
+chroma/
+chroma_db/
+db/
+vectorstore/
+index/
+
+# FAISS/Other vector DB files
+*.faiss
+*.hnsw
+*.npy
+*.npz
+
+# HuggingFace model downloads
+models/
+cache/
+~/.cache/
+huggingface/
+
+# Langchain cache
+lc_cache/
+langchain_cache.json
+
+# Temporary docs
+temp/
+tmp/
+*.tmp
+outputs/
+logs/
+
+# -------------------------
+# Node.js (if using frontend)
+# -------------------------
+node_modules/
+dist/
+build/
+.next/
+*.log
+
+# -------------------------
+# IDE settings
+# -------------------------
+.vscode/
+.idea/
+*.iml
+
+# -------------------------
+# System Files
+# -------------------------
+.DS_Store
+Thumbs.db
