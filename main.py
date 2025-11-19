@@ -28,7 +28,7 @@ EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"  # HF embedding model
 CHUNK_SIZE = 500                                   # Size of text chunks
 CHUNK_OVERLAP = 50                                 # Overlap between chunks
 TOP_K = 3                                          # Retrieval depth
-# --------------------------------
+
 
 
 def load_documents(path: Path):
@@ -50,7 +50,6 @@ def load_documents(path: Path):
 
 def split_documents(docs):
     """Split text into chunks for embedding.
-
     Uses CharacterTextSplitter to break long text into manageable
     pieces for vector storage and retrieval.
     """
@@ -64,7 +63,6 @@ def split_documents(docs):
 
 def create_or_load_vectorstore(chunks, embeddings):
     """Create a new Chroma vectorstore or load an existing one.
-
     If the persist directory already contains data, reuse it.
     Otherwise, build a new vector database from the text chunks.
     """
@@ -89,7 +87,6 @@ def create_or_load_vectorstore(chunks, embeddings):
 
 def build_chain(vectordb):
     """Construct the RetrievalQA chain using Ollama.
-
     Connects the retriever (ChromaDB) to the local LLM (Mistral)
     and creates a QA chain using LangChain.
     """
@@ -110,7 +107,6 @@ def build_chain(vectordb):
 
 def main():
     """Main CLI loop.
-
     Loads data → builds embeddings → initializes QA system →
     enters an interactive question-answering loop.
     """
